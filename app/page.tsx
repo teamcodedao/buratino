@@ -45,7 +45,7 @@ export default function Home() {
               <Image src={caImg} alt='' className='hidden sm:block' />
               <div className='absolute inset-0 flex items-center justify-center'>
                 <p className='text-center text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-[64px] break-all'>
-                  0x69420E3A3aa9E17Dea102Bb3a9b3B73dcDDB9528
+                  TBA
                 </p>
               </div>
             </div>
