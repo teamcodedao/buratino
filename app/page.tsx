@@ -30,10 +30,10 @@ export default function Home() {
         />
         <div className='absolute inset-0 flex flex-col'>
           <div className='flex gap-7 mt-10 ml-14 xl:multi-[`mt-16;ml-20`] xl:[&_img]:h-auto [&_img]:h-[80px]'>
-            <a href='/' target='_x'>
+            <a href={process.env.NEXT_PUBLIC_TWITTER_URL} target='_x'>
               <img src='/twitter.svg' alt='' />
             </a>
-            <a href='/' target='_tele'>
+            <a href={process.env.NEXT_PUBLIC_TELEGRAM_URL} target='_tele'>
               <img src='/telegram.svg' alt='' />
             </a>
           </div>
@@ -107,7 +107,11 @@ export default function Home() {
           className='w-screen object-contain'
         />
         <div className='absolute inset-0 flex justify-center items-baseline'>
-          <a href='/' target='_buy' className='px-5 sm:px-0'>
+          <a
+            href={process.env.NEXT_PUBLIC_COIN_URL}
+            target='_buy'
+            className='px-5 sm:px-0'
+          >
             <img src='/buy-now.svg' alt='' className='-translate-y-1/2' />
           </a>
         </div>
